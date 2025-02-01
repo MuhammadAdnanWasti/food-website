@@ -1,21 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Website</title>
-</head>
-<body>
-    <header>
+    <link href="src/output.css" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/efc436e834.js" crossorigin="anonymous"></script>
+    <style>
+        .sora {
+  font-family: "Sora", serif;
+        }
+
+    </style>
+</head>
+<body class="sora">
+    <header class="bg-gradient-to-r from-[#FFFFFF]  to-[#EFEBE3]">
+<nav class="max-w-screen-xl mx-auto py-12 px-3 flex justify-between items-center">
+   <div>
+<img src="c2-assets/logo-header.png" alt="logo-header">
+   </div>
+
+   <div class="hidden lg:block">
+<ul class="flex justify-center items-center gap-3 text-xl">
+    <li><a href="#">Product</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contract us</a></li>
+</ul>
+   </div>
+
+   <div class="flex justify-center items-center gap-2">
+      <div class="lg:hidden">
+        <i class="fa-solid fa-bars "></i>
+      </div>
+      
+      <div class="hidden lg:block">
+        <i class="fa-solid fa-magnifying-glass  "></i>
+        <i class="fa-solid fa-cart-shopping "></i>
+      </div>
+    <button class="btn border border-[#179800] hidden lg:block">Log in</button>
+    <button class="btn bg-[#179800] hidden lg:block">Register</button>
+   </div>
+</nav>
+<hr class="text-[#179800] lg:hidden">
+
+
+<!-- hero -->
+
+<div class="max-w-[1000px] mx-auto text-center space-y-7 px-7 mt-12">
+
+    <h1 class="text-6xl font-bold text-black ">
+        Freshness <span class="text-[#179800]"> You Can <br>
+            Count</span> On, Prices You’ll Love!
+    </h1>
+    <p class="text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+    <img class="w-full" src="c2-assets/hero-vegetables.png" alt="Vegetables">
+</div>
     </header>
 
     <main>
+<!-- service -->
+ <section class="max-w-screen-xl mx-auto my-12 space-y-7 px-3">
+<h1 class="text-3xl font-semibold text-[#179800]">Services</h1>
 
+<div class="flex flex-col lg:flex-row justify-center items-center gap-7">
+    <div class="card  w-96 shadow-sm bg-[#EFEBE3]">
+        <figure class="w-[150px] h-[150px] bg-white rounded-full mx-auto mt-3">
+          <img
+            src="c2-assets/service.png"
+            alt="Services"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">24/7 Services </h2>
+          <p>Feel free to contract with us. Our specilise team is there to assits you. What are you waiting for!</p>
+         
+        </div>
+      </div>
+    <div class="card  w-96 shadow-sm bg-[#EFEBE3]">
+        <figure class="w-[150px] h-[150px] bg-white rounded-full mx-auto mt-3">
+          <img
+            src="c2-assets/delivery.png"
+            alt="Services"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Fast Delievery</h2>
+          <p>Feel free to contract with us. Our specilise team is there to assits you. What are you waiting for!</p>
+         
+        </div>
+      </div>
+    <div class="card  w-96 shadow-sm bg-[#EFEBE3]">
+        <figure class="w-[150px] h-[150px] bg-white rounded-full mx-auto mt-3">
+          <img
+            src="c2-assets/healthy.png"
+            alt="Services"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Healthy Products </h2>
+          <p>Feel free to contract with us. Our specilise team is there to assits you. What are you waiting for!</p>
+         
+        </div>
+      </div>
+</div>
+ </section>
+
+ <!-- Popular -->
+  <section  class="bg-gradient-to-r from-[#FFFFFF]  to-[#EFEBE3]">
+    <div class="max-w-screen-xl mx-auto my-12 space-y-7 px-3">
+        <h1 class="text-3xl font-semibold text-[#179800]">
+Popular Products
+        </h1>
+<!-- cards -->
+<div class="grid grid-cols-2 lg:grid-cols-5 ">
+    <!-- card1 -->
+     
+        <div class="card bg-base-100 w-96 shadow-sm">
+            <div class="card-body">
+              <h2 class="card-title">Card Title</h2>
+              <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+              <button class="bg-white text-black">Buy now</button>
+            </div>
+            <figure>
+              <img
+                src="c2-assets/vegetable-offer.png"
+                alt="Shoes" />
+            </figure>
+          </div>
+     
+
+
+</div>
+    </div>
+
+  </section>
     </main>
 
     <footer>
-        
+
     </footer>
 </body>
 </html>
